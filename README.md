@@ -1,20 +1,22 @@
-
 # SplashIconGenerator
 
-A simple .NET 8 console app to generate multiple icon sizes from a source PNG folder.
+Generates splash icons from a source directory with random resolutions.
 
-## Features
-- Reads all `.png` files from `/icons`
-- Generates multiple resolutions: 256x256, 512x512, 1024x1024
-- Saves results in `/output/{resolution}` subfolders
-- Keeps original icons untouched
+## Requirements
+- .NET 9 SDK
 
 ## Usage
-```bash
-dotnet build
-dotnet run
-```
+1. Place your source images in the `icons` folder.
+2. Build the project:
+   ```bash
+   dotnet build
+   ```
+3. Run the project:
+   ```bash
+   dotnet run
+   ```
+4. Generated icons will appear in the `output` folder.
 
 ## Notes
-- Replace images in `/icons` with your own assets.
-- Output icons will appear in `/output` without overwriting originals.
+- Random resolutions between 64x64 and 512x512.
+- Keeps original files intact.
